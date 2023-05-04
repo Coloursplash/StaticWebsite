@@ -1,0 +1,46 @@
+h1 {
+    background-color: yellow;
+    color: violet;
+}
+
+h2 {
+    background-color: green
+}
+
+h3 {
+    background-color: hotpink;
+}
+
+p {
+    background-color: paleturquoise;
+}
+
+ul {
+    background-color: chartreuse;
+    border-width: 5px;
+    border-style: dashed;
+}
+
+img {
+    background-color: brown;
+    width: 20%;
+    height: 20%;
+}
+
+label {
+    font-size: large;
+    font-weight: bold;
+    color: white;
+}
+
+body {
+    background-image: url(https://i.insider.com/5c5dd439dde867479d106cc2?width=700&format=jpeg&auto=webp);
+    background-size: cover;
+    font-family: “Comic Sans MS”, “Comic Sans”, monospace;
+}
+
+#victim {
+    margin: 1%;
+    background-image: url(https://www.hdwallpaper.nu/wp-content/uploads/2015/02/maxresdefault.jpg);
+    background-size: contain;
+}

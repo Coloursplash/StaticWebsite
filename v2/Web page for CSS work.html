@@ -1,0 +1,48 @@
+<!DOCTYPE html>  
+<html lang="en"> 
+    <head>  
+        <title>CSS</title>
+        <link rel="icon" href="WebIcon.ico">
+        <link rel="stylesheet" href="mystyle.css">
+    </head>
+  
+    <body>
+        
+        <h1>This is a CSS demonstration page</h1>
+        <img src="CSS logo.png" alt="CSS logo">
+        <p>
+            The following languages platy a key role in the creation of a modern web page:
+            <ul>
+                <li>HTML</li>
+                <li><b><u>CSS</u></b></li>
+                <li>JavaScript</li>
+            </ul>
+        </p>
+        <p>
+            CSS (Cascading Style Sheets), like HTML, is a client-side language.  In fact, it works very closely with HTML, and its role is to control the visual formatting / style / design of a web page.
+        </p>
+        <h3>The difficulties with web design pre-CSS</h3>
+        <p>
+            Before CSS, it was possible, using HTML, to control the visual appearance of your text, your buttons etc., but there was a huge problem.  If your website contained hundreds of pages, and you wanted a fresh visual makeover for the whole website, then you would have to go to the HTML code for each element on every page to change the style.
+        </p>
+        <h3>CSS to the rescue</h3>
+        <p>
+            The principle behind CSS is that you separate the style / design code and put it in a CSS file, whilst the content of your web page remains within an HTML file. It's a bit like putting someone in charge of making a product in your company (HTML), and somebody else in charge of marketing (CSS).
+        </p>
+        <p>
+            A different HTML page on your website can use the same CSS file to maintain the same visual style.  This makes it very easy to change the style of the whole site – you just need to edit the CSS file.
+        </p>
+
+        
+        <h2>Feedback</h2>
+        <div id="victim">
+            <form>
+                <label for="usrFeedback">Please enter your thoughts on CSS:</label><br>
+                <textarea id="usrFeedback" placeholder="Enter your thoughts here ..."></textarea>
+            </form>
+            <br>
+            <button type="button" onclick="alert(document.getElementById('usrFeedback').value)">Click Me!</button>
+        </div>
+
+  </body>
+</html>
