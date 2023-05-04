@@ -1,0 +1,293 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: url("../img/background.png") center center no-repeat fixed;
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+
+    --text: #fff;
+    --alt-text: #000;
+    --primary-color: #82d7ff;
+    --font: 'Source Code Pro', monospace;
+    --bg-color: #212121;
+}
+
+.nav-bar {
+    width: 100%;
+    height: 52px;
+    background-color: var(--bg-color);
+}
+
+.nav-bar img {
+    float: left;
+    padding-left: 18px;
+    padding-top: 6px;
+    height: 40px;
+    width: 40px;
+}
+
+.nav-bar .text {
+    float: left;
+    text-align: center;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 25px;
+    font-family: var(--font);
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.nav-bar span {
+    text-align: center;
+    font-family: var(--font);
+    font-size: 25px;
+    color: var(--primary-color);
+}
+
+.nav-bar a {
+    float: right;
+    text-align: center;
+    padding-right: 18px;
+    padding-top: 10px;
+    font-size: 25px;
+    font-family: var(--font);
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.nav-bar a:link {
+    text-decoration: none;
+}
+
+.nav-bar a:active {
+    text-decoration: none;
+}
+
+.nav-bar a:hover {
+    text-decoration: none;
+}
+
+.nav-bar a:visited {
+    text-decoration: none;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: var(--font);
+    text-decoration: none;
+    color: var(--alt-text);
+}
+
+.right {
+    float: right;
+    width: 330px;
+    margin: 30px;
+}
+
+.about {
+    width: 330px;
+    border: 0px none;
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+    background-color: var(--bg-color);
+    margin-bottom: 30px;
+}
+
+.about .title {
+    font-size: 1.5em;
+    font-family: var(--font);
+    color: var(--text);
+    padding: 8px;
+}
+
+.about .wrap {
+    font-size: 1em;
+    font-family: var(--font);
+    color: var(--text);
+    padding: 8px;
+}
+
+.about a {
+    font-family: var(--font);
+    text-decoration: none;
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.about a:link {
+    text-decoration: none;
+}
+
+.about a:active {
+    text-decoration: none;
+}
+
+.about a:hover {
+    text-decoration: none;
+}
+
+.about a:visited {
+    text-decoration: none;
+}
+
+.about select {
+    font-family: var(--font);
+}
+
+.about ul {
+    padding: 0px;
+    margin: 0px;
+    margin-left: 24px;
+}
+
+.options {
+    width: 330px;
+    border: 0px none;
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+    background-color: var(--bg-color);
+}
+
+.options .title {
+    font-size: 1.5em;
+    font-family: var(--font);
+    color: var(--text);
+    padding: 8px;
+}
+
+.options .wrap {
+    font-size: 1em;
+    font-family: var(--font);
+    color: var(--text);
+    padding: 8px;
+}
+
+.options a {
+    font-family: var(--font);
+    text-decoration: none;
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.options a:link {
+    text-decoration: none;
+}
+
+.options a:active {
+    text-decoration: none;
+}
+
+.options a:hover {
+    text-decoration: none;
+}
+
+.options a:visited {
+    text-decoration: none;
+}
+
+.left {
+    float: left;
+    width: calc(100vw - 466px);
+    margin: 30px;
+}
+
+#editor {
+    width: 100%;
+    height: 525px;
+    background-color: var(--bg-color);
+    border: none;
+    color: var(--text);
+    overflow: auto;
+    white-space: pre;
+    display: block;
+    float: left;
+    margin: 0px;
+    word-wrap: normal;
+    resize: none;
+}
+
+#editor:focus {
+    outline: none;
+}
+
+.btn-bar {
+    margin-top: 555px;
+}
+
+.inactive_button {
+    background-color: #999;
+    cursor: default;
+    font-family: var(--font);
+    color: var(--alt-text);
+    border: 3px solid var(--bg-color);
+    padding: 5px 10px;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 1em;
+    float: left;
+    user-select: none;
+}
+
+.active_button {
+    font-family: var(--font);
+    color: var(--alt-text);
+    border: 3px solid var(--bg-color);
+    background-color: #fff;
+    padding: 5px 10px;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 1em;
+    float: left;
+    user-select: none;
+    cursor: pointer;
+}
+
+#output {
+    font-family: var(--font);
+    margin-top: 30px;
+    color: var(--text);
+    height: 180px;
+    background-color: var(--bg-color);
+    white-space: pre;
+    overflow: auto;
+    padding: 2px 4px;
+    font-size: 12px;
+    clear: both;
+}
+
+#input, #input_border {
+    background-color: #fff;
+}
+
+#input_border {
+    border: 1px solid #1E1916;
+    padding: 0px 5px;
+}
+
+#input {
+    width: 100%;
+    border: 0px;
+    font-size: 14px;
+    padding: 3px 0px;
+    margin: 0px;
+    font-family: var(--font);
+}
+
+#input:focus {
+    outline: none;
+}
+
+#status {
+    padding-top: 5px;
+    font-family: var(--font);
+    font-size: 1.2em;
+    color: var(--alt-text);
+    font-weight: bold;
+}

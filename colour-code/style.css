@@ -1,0 +1,180 @@
+body {
+    --button-bg-color: white;
+    --border-color: 1px solid #d2d6de;
+    --icon-color: black;
+    --transition-delay: 0.5s;
+    --bar-background-color: linear-gradient(89.81deg, #0678F4 41.01%, #37B2DF 99.64%);
+    margin: 0px;
+    background-size: cover;
+}
+
+.tab {
+    font: 12px/normal 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;
+}
+
+.nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.container {
+    width: 75vw;
+    height: calc(100vh - 6px);
+    min-width: 450px;
+    min-height: 600px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (max-width: 1100px) {
+    .container {
+        width: calc(100% - 30px);
+    }}
+
+.button-row-control {
+    margin-top: 6px;
+    margin-bottom: 6px;
+    height: 34px;
+}
+
+.btn-group {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.btn {
+    padding: 6px 15px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    margin-left: 0px;
+}
+
+.btn-default {
+    background-color: var(--button-bg-color);
+    border: var(--border-color);
+    color: var(--icon-color);
+    transition: var(--transition-delay);
+}
+
+.btn-first {
+    border-radius: 4px 0px 0px 4px;
+}
+
+.btn-last {
+    border-radius: 0px 4px 4px 0px;
+}
+
+.btn-no-gap {
+    margin-left: -5px;
+}
+
+.split {
+    height: calc(100% - 86px);
+}
+
+@media (max-width: 475px) {
+    .hide-mobile {
+        display: none;
+    }}
+
+#editor {
+    height: 100%;
+    width: 100%;
+    /* idk why but the font is the wrong size for some reason but this fixes it */
+    font-size: 95%;
+    border: var(--border-color);
+    border-radius: 4px;
+}
+
+/* (A) POPUP WRAPPER */
+#popwrap {
+    /* (A1) FULLSCREEN COVER*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.5);
+
+    /* (A2) CENTER BOX ON PAGE */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* (A3) HIDDEN BY DEFAULT */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s;
+}
+
+/* (A4) SHOW POPUP */
+#popwrap.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* (B) POPUP BOX */
+#popbox {
+    position: fixed;
+    box-sizing: border-box;
+    min-width: 320px;
+    font: 12px/normal 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;
+}
+
+/* (C) TITLE + TEXT + CLOSE BUTTON  */
+#poptitle {
+    background: var(--bar-background-color);
+}
+
+#poptext {
+    background: #fff;
+    font-size: 14px;
+}
+
+#popfooter {
+    background: #fff;
+    font-size: 11px;
+    margin: 0px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+a {
+    color: #0678F4;
+    text-decoration: none;
+}
+
+#poptitle, #poptext {
+    padding: 10px;
+    margin: 0;
+}
+
+#poptitle, #popclose {
+    font-size: 28px;
+    color: #fff;
+}
+
+#popclose {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
