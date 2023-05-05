@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <script>
+        function answerPopup() {
+            let val = document.getElementById(answer).value;
+            if (val == "merge sort") {
+                alert("Correct!");
+            } else if (val == "bubble sort") {
+                alert("Wrong!");
+            } else {
+                alert("That's not an option!")
+            }
+        }
+    </script>
+
+    <style>
+        img {
+            height: 100px;
+            width: 100px;
+        }
+
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted black;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 10vw;
+            top: -5px;
+            left: 105%;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            padding: 5px 0;
+            border-radius: 6px;
+
+            position: absolute;
+            z-index: 1;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+
+        .form {
+            display: flex;
+        }
+
+        textarea {
+            height: 21px;
+            margin-right: 5px;
+        }
+
+        .tg {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        .tg td {
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+        }
+
+        .tg th {
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+        }
+
+        .tg .tg-0lax {
+            text-align: left;
+            vertical-align: top
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1> Spend more time writing to save time!</h1>
+
+    <img src="https://www.ciphertools.co.uk/Images/KEGSLogo.jpg" title="KEGS logo">
+
+    <h2>Why optimising your code is worth it</h2>
+
+    <p>It is possible to write programs to solve some tasks quite quickly. If we are asked to sort an array, then many
+        of us would quite quickly write something like a bubble sort algorithm, and once the bugs have been removed,
+        this would successfully sort even long arrays.</p>
+
+    <p>But it would do so very slowly, as this <a
+            href="https://www.geeksforgeeks.org/analysis-of-different-sorting-techniques/">website</a> shows:</p>
+
+    <ul>
+        <li>
+            <div class="tooltip">Bubble sort: very slow
+                <span class="tooltiptext">A bubble sort algorithm goes through a list of data a number of times,
+                    comparing two items that are side by side to see which is out of order. It will keep going through
+                    the list of data until all the data is sorted into order. Each time the algorithm goes through the
+                    list it is called a 'pass'.</span>
+            </div>
+        </li>
+
+        <li>
+            <div class="tooltip">Merge sort: much faster!
+                <span class="tooltiptext">A merge sort uses a technique called divide and conquer. The list is
+                    repeatedly divided into two until all the elements are separated individually. Pairs of elements are
+                    then compared, placed into order and combined. The process is then repeated until the list is
+                    recompiled as a whole.</span>
+            </div>
+        </li>
+    </ul>
+
+    <h2>Quick quiz!</h2>
+
+    <p>Which sorting algorithm is faster, bubble sort or merge sort?</p>
+
+    <div class="form">
+        <textarea id="answer"></textarea>
+        <button type="button" onclick="answerPopup()">Submit your answer</button>
+    </div>
+
+    <h2>Big O-notation</h2>
+
+    <table class="tg">
+        <thead>
+            <tr>
+                <th class="tg-0lax">Algorithm</th>
+                <th class="tg-0lax">Time complexity</th>
+                <th class="tg-0lax">Space complexity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="tg-0lax">Bubble sort</td>
+                <td class="tg-0lax">O(n²)</td>
+                <td class="tg-0lax">O(1)</td>
+            </tr>
+            <tr>
+                <td class="tg-0lax">Merge sort</td>
+                <td class="tg-0lax">O(n log(n))</td>
+                <td class="tg-0lax">O(n)</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2><marquee width="60%" direction="right">Sorting algorithm visualisation</marquee></h2>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/kPRA0W1kECg" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+
+</body>
+
+</html>
