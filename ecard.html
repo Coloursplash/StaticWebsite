@@ -10,9 +10,16 @@
         }
 
         img {
-            height: 80vh;
-            margin-top: 50px;
+            height: min(95vw, 80vh);
             image-rendering: -webkit-optimize-contrast;
+        }
+
+        .vertical-center {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
         }
 
         #letter {
@@ -120,7 +127,7 @@
 <body>
     <main>
         <div id="letter">
-            <img src="main.png">
+            <img class="vertical-center" src="card-work.png">
         </div>
     </main>
 
