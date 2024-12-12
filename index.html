@@ -1,134 +1,18 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<title>Site Maintenance</title>
+<style>
+  body { text-align: center; padding: 150px; }
+  h1 { font-size: 50px; }
+  body { font: 20px Helvetica, sans-serif; color: #333; }
+  article { display: block; text-align: left; width: 650px; margin: 0 auto; }
+  a { color: #dc8100; text-decoration: none; }
+  a:hover { color: #333; text-decoration: none; }
+</style>
 
-<head>
-    <title>Coloursplash</title>
-    <link rel="icon" href="icons/icon-32x32.png" type="image/x-icon">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
-
-    <!-- General Stylesheet-->
-    <link href="index/css/style.css" type="text/css" rel="stylesheet" media="screen" />
-
-    <!-- Roboto Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <meta name="description"
-        content="Coloursplash - Programmer / Artist / Game designer - Blogs, projects and commissions.">
-    <meta name="keywords" content="coloursplash, coloursplash.net, colorsplash, colour splash">
-    <meta name="author" content="Coloursplash">
-    <meta name="robots" content="index, follow">
-    <meta name="googlebot" content="index, follow">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-touch-fullscreen" content="yes">
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0LMWGTTXF9"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-0LMWGTTXF9');
-    </script>
-</head>
-
-<body>
-    <header>
-        <div class="nav-bar">
-            <img src="icons/icon-64x64.png">
-            <div class="text">Coloursplash</div>
-
-            <!-- <a href="#commissions" class="scroll">Commissions</a>
-            <a href="#portfolio" class="scroll">Portfolio</a> -->
-            <a href="#socials" class="scroll">Socials</a>
-            <a href="#projects" class="scroll">Projects</a>
-            <a href="#blog" class="scroll">Blog</a>
-            <a href="#about" class="scroll">About</a>
-        </div>
-    </header>
-
-    <main>
-        <div class="title-container" id="about">
-            <span class="title">Coloursplash</span>
-            <span class="subtitle">Programmer / Artist / Game designer<br>Contact:
-                <b class="email">coloursplashbusiness@gmail.com</b></span>
-            <a href="/github"><i class="fa fa-github"></i> GitHub</a>
-            <!-- <a href="/todo"><i class="fa fa-list-ul"></i> Todo list</a> -->
-        </div>
-
-        <div class="title-container" id="blog">
-            <span class="title">Blog</span>
-            <span class="subtitle">I post progress on my projects and how they work, as well as other subjects I find
-                interesting.</span>
-            <a href="/blog"><i class="fa fa-book"></i> Blog</a>
-        </div>
-
-        <div class="projects-container" id="projects">
-            <span class="title">Projects</span>
-            <div class="project" onclick="window.location.href='/code';">
-                <img src="index/img/colour-code-preview.png" class="preview-project">
-                <h2><i class="fa fa-code"></i> ColourCode</h2>
-                <p>ColourCode is an online code-editor packed with features and amazing UI.</p>
-            </div>
-
-
-            <div class="project" onclick="window.location.href='/brainfuck/';">
-                <img src="index/img/brainfuck-preview.png" class="preview-project">
-                <h2><i class="fa fa-asterisk"></i> Brainfuck</h2>
-                <p>Run and debug your Brainfuck code here.</p>
-            </div>
-
-            <div class="project" onclick="window.location.href='/simulation/wireworld';">
-                <img src="index/img/wireworld-preview.png" class="preview-project">
-                <h2><i class="fa fa-globe-europe"></i> Wireworld</h2>
-                <p>Recreate logic gates with wires and electrons.</p>
-            </div>
-
-            <div class="project" onclick="window.location.href='https://github.com/Coloursplash/TicTac-2.0';">
-                <img src="index/img/tic-tac-2.0-preview.png" class="preview-project">
-                <h2><i class="fa fa-times"></i> Tic Tac 2.0</h2>
-                <p>Tic tac 2.0, the same game but with an ever changing grid.</p>
-            </div>
-
-            <div class="project" onclick="window.location.href='https://github.com/rudrrayan/Codebreaker';">
-                <img src="index/img/code-breaker-preview.png" class="preview-project">
-                <h2><i class="fa fa-hammer"></i> Code Breaker</h2>
-                <p>Crack caesar, atbash and substitution ciphers.</p>
-            </div>
-        </div>
-
-        <div class="title-container" id="socials">
-            <span class="title">Socials</span>
-            <span class="subtitle">My social media links</span>
-            <a href="/github"><i class="fa fa-github"></i> GitHub</a>
-            <a href="/twitter"><i class="fa fa-twitter"></i> Twitter</a>
-            <a href="/youtube"><i class="fa fa-youtube"></i> YouTube</a>
-            <a href="/twitch"><i class="fa fa-tv"></i> Twitch</a>
-        </div>
-
-        <!-- <div class="title-container" id="portfolio">
-            <span class="title">Portfolio</span>
-            <span class="subtitle">A detailed website, including all of my skills, qualifications and past projects can
-                be found here.</span>
-            <a href="/portfolio"><i class="fa fa-briefcase"></i> Portfolio</a>
-        </div>
-
-        <div class="title-container" id="commissions">
-            <span class="title">Commissions</span>
-            <span class="subtitle">Find prices for art and programming commissions here.</span>
-            <a href="/commissions"><i class="fa fa-paint-brush"></i> Commissions</a>
-        </div> -->
-    </main>
-
-    <footer>
-        <p><i class="fa fa-copyright"></i> Coloursplash 2021</p>
-    </footer>
-</body>
-
-</html>
+<article>
+    <h1>We&rsquo;ll be back soon!</h1>
+    <div>
+        <p>Sorry for the inconvenience but we&rsquo;re performing some maintenance at the moment. If you need to you can always <a href="mailto:#">contact us</a>, otherwise we&rsquo;ll be back online shortly!</p>
+        <p>&mdash; The Team</p>
+    </div>
+</article>
